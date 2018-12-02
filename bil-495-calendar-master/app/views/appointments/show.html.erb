@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @appointment.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @appointment.date %>
+</p>
+
+<p>
+  <strong>Recursive:</strong>
+  <%= @appointment.recursive %>
+</p>
+
+<p>
+  <strong>Recursedays:</strong>
+  <%= @appointment.recurseDays %>
+</p>
+
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>
